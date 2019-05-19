@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Practice">
+<listeners>
+
+<listener class-name="com.ap.ui.ExtentReportListener.ExtentReporterN" />
+</listeners>
+
+<test name="Automation Practice App Test Cases">
+
+		<classes>
+		<class name="com.api.ui.testcases.loginTest"></class>
+		<class name="com.api.ui.testcases.ContactTest"></class> 
+		<class name="com.api.ui.testcases.SearchItemTest"></class> 
+		<class name="com.api.ui.testcases.AddWishListTest"></class>
+		<class name="com.api.ui.testcases.CheckOutProductTest"></class>
+		shift+Ctrl+/--comment
+		shift+Crtl+C/--Uncomment
+	</classes>
+	</test>
+</suite>
