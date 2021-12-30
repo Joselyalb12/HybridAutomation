@@ -27,7 +27,7 @@ public class TestBase {//We are using a constructor model because theClass is us
 				propt = new Properties();
 				
 				//Finding the URL path for the file of the property 
-				FileInputStream ipa = new FileInputStream("C:\\Users\\Josel\\Desktop\\Automation Documents\\Automation.test1\\src\\main\\java\\com\\api\\ui\\config\\config.properties");
+				FileInputStream ipa = new FileInputStream("C:\\Users\\Josely Alberto\\GitStuff\\HybridAutomation\\src\\main\\java\\com\\api\\ui\\config\\config.properties");
 						
 					propt.load(ipa);
 				
@@ -42,7 +42,7 @@ public static void intialization() {
 		String browserName = propt.getProperty("browser");
 			
 				if(browserName.equalsIgnoreCase("chrome")) {
-					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/src/main/resources/driver folder/chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "//src//main//resources//driver folder//chromedriver.exe");
 						driver = new ChromeDriver();
 					
 }

@@ -1,70 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24296" started-at="2019-05-14T16:30:32Z" finished-at="2019-05-14T16:30:56Z">
+  <suite started-at="2021-12-29T20:16:03 EST" name="Default suite" finished-at="2021-12-29T20:16:16 EST" duration-ms="12742">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24296" started-at="2019-05-14T16:30:32Z" finished-at="2019-05-14T16:30:56Z">
-      <class name="com.api.ui.testcases.ContactTest">
-        <test-method status="PASS" signature="setUpdriver()[pri:0, instance:com.api.ui.testcases.ContactTest@754ba872]" name="setUpdriver" is-config="true" duration-ms="11416" started-at="2019-05-14T16:30:32Z" finished-at="2019-05-14T16:30:43Z">
+    <test started-at="2021-12-29T20:16:03 EST" name="Default test" finished-at="2021-12-29T20:16:16 EST" duration-ms="12742">
+      <class name="com.api.ui.testcases.loginTest">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:03 EST" name="setUpDriver" finished-at="2021-12-29T20:16:07 EST" duration-ms="3701" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpdriver -->
-        <test-method status="FAIL" signature="testContact()[pri:0, instance:com.api.ui.testcases.ContactTest@754ba872]" name="testContact" duration-ms="11831" started-at="2019-05-14T16:30:43Z" finished-at="2019-05-14T16:30:55Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:07 EST" name="loginPageTitleTest" finished-at="2021-12-29T20:16:07 EST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:07 EST" name="CloseBrowser" finished-at="2021-12-29T20:16:08 EST" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:08 EST" name="setUpDriver" finished-at="2021-12-29T20:16:10 EST" duration-ms="2739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="apLogoTest()[pri:2, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:10 EST" name="apLogoTest" finished-at="2021-12-29T20:16:11 EST" duration-ms="122" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot locate element with text: Customer Service
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-PC4NH006', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: driver.version: unknown]]>
+              <![CDATA[expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Customer Service
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-PC4NH006', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_192'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
-at com.api.ui.pages.ContactsPage.fillContactFormO(ContactsPage.java:37)
-at com.api.ui.testcases.ContactTest.testContact(ContactTest.java:31)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at com.api.ui.testcases.loginTest.apLogoTest(loginTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testContact -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.api.ui.testcases.ContactTest@754ba872]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-05-14T16:30:55Z" finished-at="2019-05-14T16:30:56Z">
+        </test-method> <!-- apLogoTest -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:11 EST" name="CloseBrowser" finished-at="2021-12-29T20:16:11 EST" duration-ms="732" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.api.ui.testcases.ContactTest -->
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:11 EST" name="setUpDriver" finished-at="2021-12-29T20:16:14 EST" duration-ms="2787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="actuallogin()[pri:3, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:14 EST" name="actuallogin" finished-at="2021-12-29T20:16:15 EST" duration-ms="994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actuallogin -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.api.ui.testcases.loginTest@1e6454ec]" started-at="2021-12-29T20:16:15 EST" name="CloseBrowser" finished-at="2021-12-29T20:16:16 EST" duration-ms="772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.api.ui.testcases.loginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

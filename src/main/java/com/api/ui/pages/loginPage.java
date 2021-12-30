@@ -19,7 +19,7 @@ public class loginPage extends TestBase {
 	@FindBy(id="SubmitLogin")
 	WebElement submitbutton;
 	
-	@FindBy(xpath = "//*[@id=\'header_logo\']/a/img")
+	@FindBy(xpath = "//img[@class='logo img-responsive']")
 	WebElement apLogo;
 	
 public loginPage() {

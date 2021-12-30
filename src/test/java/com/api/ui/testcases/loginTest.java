@@ -31,7 +31,7 @@ public class loginTest extends TestBase {
 		@Test(priority = 1)
 		public void loginPageTitleTest() {
 		String hometitle = LoginPage.VerifyPageTitle();//Hometitle is holding the title 
-			Assert.assertEquals(hometitle, "Later will check on the site");
+			Assert.assertEquals(hometitle, "Login - My Store");
 			//Accepts two strings and compares the string hometitle and verify that they equal
 		
 		}
